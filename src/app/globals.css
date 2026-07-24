@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (default theme is dark, set by ThemeScript) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens ---------- */
+:root {
+  --bg: #fbfaf7;
+  --bg-subtle: #f1efe8;
+  --bg-inset: #ffffff;
+  --fg: #16150f;
+  --fg-muted: #6a665c;
+  --fg-faint: #98948a;
+  --card: #ffffff;
+  --border: rgba(22, 21, 15, 0.1);
+  --border-strong: rgba(22, 21, 15, 0.16);
+  --accent: #c3f53c;
+  --accent-ink: #16150f;
+  --accent-2: #47630a;
+  --ring: rgba(22, 21, 15, 0.5);
+}
+
+.dark {
+  --bg: #0a0a0b;
+  --bg-subtle: #141416;
+  --bg-inset: #101012;
+  --fg: #eeece4;
+  --fg-muted: #9b978c;
+  --fg-faint: #6c685f;
+  --card: #141416;
+  --border: rgba(238, 236, 228, 0.12);
+  --border-strong: rgba(238, 236, 228, 0.2);
+  --accent: #c3f53c;
+  --accent-ink: #0a0a0b;
+  --accent-2: #c3f53c;
+  --ring: rgba(238, 236, 228, 0.6);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-bg-inset: var(--bg-inset);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-faint: var(--fg-faint);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-2: var(--accent-2);
+
+  --font-display: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+  --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
+  --font-serif: var(--font-serif), "Instrument Serif", Georgia, serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-marquee-slow: marquee 64s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent); }
+  70% { box-shadow: 0 0 0 12px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); }
+}
+
+/* ---------- Utilities ---------- */
+@utility wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 82rem;
+  padding-inline: 1.5rem;
+}
+
+@utility wrap-tight {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 68rem;
+  padding-inline: 1.5rem;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+@utility grain {
+  position: relative;
+}
+@utility grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+@utility marker-hl {
+  background-image: linear-gradient(120deg, color-mix(in srgb, var(--accent) 55%, transparent), color-mix(in srgb, var(--accent) 55%, transparent));
+  background-repeat: no-repeat;
+  background-position: 0 78%;
+  background-size: 100% 42%;
+  padding-inline: 0.06em;
+}
+
+.reveal-line {
+  overflow: hidden;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
