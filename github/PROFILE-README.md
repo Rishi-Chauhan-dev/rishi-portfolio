@@ -58,14 +58,11 @@
 | **Bloom** | Wellness & fitness mobile app | [Case study ↗](https://rishi-portfolio-alpha-eight.vercel.app/work/bloom) |
 | **Lumen** | AI SaaS analytics dashboard | [Case study ↗](https://rishi-portfolio-alpha-eight.vercel.app/work/lumen) |
 
-### 📊 GitHub
+### 🌱 Currently
 
-<div align="center">
-
-![Rishi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Rishi-Chauhan-dev&show_icons=true&hide_border=true&title_color=4d6a00&icon_color=4d6a00)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rishi-Chauhan-dev&layout=compact&hide_border=true&title_color=4d6a00)
-
-</div>
+- 🔭 Designing & building product interfaces — Figma → React / Next.js
+- 🧪 Prototyping new-gen concepts across fintech, wellness & AI
+- 🌐 Live portfolio → [rishi-portfolio-alpha-eight.vercel.app](https://rishi-portfolio-alpha-eight.vercel.app)
 
 <div align="center">
 
