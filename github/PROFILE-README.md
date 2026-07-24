@@ -19,8 +19,8 @@
 *I care about the small stuff between design and code: the spacing, the easing curve,*
 *and the moment an interface stops feeling like software and starts feeling effortless.*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-16150f?style=for-the-badge&logo=vercel&logoColor=white)](https://rishichauhan.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rishichauhan)
+[![Portfolio](https://img.shields.io/badge/Portfolio-16150f?style=for-the-badge&logo=vercel&logoColor=white)](https://rishi-portfolio-alpha-eight.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rishi-chauhan-993884335)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rishi.chauhan24092002@gmail.com)
 
 </div>
@@ -54,9 +54,9 @@
 | Project | What it is | |
 | :-- | :-- | :-- |
 | **Shree Navya** 🟢 Live | Indian FMCG e-commerce storefront | [Visit ↗](https://www.shreenavyafoodproducts.com/) |
-| **Aurora** | Neobank / fintech mobile concept | [Case study ↗](https://rishichauhan.vercel.app/work/aurora) |
-| **Bloom** | Wellness & fitness mobile app | [Case study ↗](https://rishichauhan.vercel.app/work/bloom) |
-| **Lumen** | AI SaaS analytics dashboard | [Case study ↗](https://rishichauhan.vercel.app/work/lumen) |
+| **Aurora** | Neobank / fintech mobile concept | [Case study ↗](https://rishi-portfolio-alpha-eight.vercel.app/work/aurora) |
+| **Bloom** | Wellness & fitness mobile app | [Case study ↗](https://rishi-portfolio-alpha-eight.vercel.app/work/bloom) |
+| **Lumen** | AI SaaS analytics dashboard | [Case study ↗](https://rishi-portfolio-alpha-eight.vercel.app/work/lumen) |
 
 ### 📊 GitHub
 

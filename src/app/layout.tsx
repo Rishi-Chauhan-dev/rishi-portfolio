@@ -21,7 +21,7 @@ const serif = Instrument_Serif({
 const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rishichauhan.vercel.app"),
+  metadataBase: new URL("https://rishi-portfolio-alpha-eight.vercel.app"),
   title: {
     default: `${site.name} — ${site.role}`,
     template: `%s — ${site.name}`,

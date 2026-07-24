@@ -10,9 +10,9 @@ export const site = {
   availability: "Available for UI/UX roles",
   resume: "/rishi-chauhan-cv.pdf",
   socials: {
-    // TODO: replace the handles below with your real profile URLs
+    // github + linkedin are live; dribbble/twitter are optional.
     github: "https://github.com/Rishi-Chauhan-dev",
-    linkedin: "https://www.linkedin.com/in/rishichauhan",
+    linkedin: "https://www.linkedin.com/in/rishi-chauhan-993884335",
     dribbble: "https://dribbble.com/rishichauhan",
     twitter: "",
   },

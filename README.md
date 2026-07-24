@@ -4,7 +4,7 @@
 
 **Designing & building clean, human-centred product interfaces.**
 
-[Live site](https://rishichauhan.vercel.app) · [Résumé (PDF)](./public/rishi-chauhan-cv.pdf) · [Figma kit](./figma-kit)
+[Live site](https://rishi-portfolio-alpha-eight.vercel.app) · [Résumé (PDF)](./public/rishi-chauhan-cv.pdf) · [Figma kit](./figma-kit)
 
 ![Portfolio preview](./docs/preview.png)
 
